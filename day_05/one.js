@@ -15,7 +15,7 @@ while (i < data.length && data[i] != 99) {
 
     const param1 = paramModes[0] === 0 ? data[data[i+1]] : data[i+1],
           param2 = paramModes[1] === 0 ? data[data[i+2]] : data[i+2],
-          param3 = data[i+3]; // can't be immedite mode
+          param3 = data[i+3]; // can't be immediate mode
     
     switch (opcode) {
         case 1: data[param3] = param1 + param2; break;
