@@ -25,7 +25,7 @@ while (i < data.length && data[i] != 99) {
         case 4: console.log(param1);                      i += 2; break;
         case 5: if (param1 !== 0) i = param2;        else i += 3; break;
         case 6: if (param1 === 0) i = param2;        else i += 3; break;
-        case 7: data[param3] = param1 < param2 ? 1 : 0;   i += 4; break;
+        case 7: data[param3] = param1 < param2   ? 1 : 0; i += 4; break;
         case 8: data[param3] = param1 === param2 ? 1 : 0; i += 4; break;
         default: console.log(`Unkown opcode: ${opcode}`);
     }
